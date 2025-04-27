@@ -1,5 +1,8 @@
 local input = {
   meta = {
+    -- Used for backwards compatibility.
+    -- The pdEdit version being used.
+    version = 1
     bundleID = "com.example.example",
     name = "My Game",
     -- banner is an image with the same dimensions as on the catalog
@@ -14,7 +17,7 @@ local input = {
     [1] = {
       meta = {
         name = "block",
-        texture = "/Shared/path/to/texture/"
+        texture = "/Shared/path/to/texture"
       },
       settings = {
         canRotate = true,
