@@ -2,7 +2,7 @@ local input = {
   meta = {
     -- Used for backwards compatibility.
     -- The pdEdit version being used.
-    -- NOTE: Versions will not be used until pdEdit 1.0 is out.
+    -- NOTE: Versions will not be used until pdEdit 1.0 is out. For now it should always equal 1.
     version = 1
     bundleID = "com.example.example",
     name = "My Game",
