@@ -15,7 +15,10 @@ local input = {
       flip = true
       -- Settings tool is used to select custom settings.
       settings = true
-    }
+    },
+    -- maxX and maxY must use values <= 255. The minimum X and Y pos will always be 0.
+    maxX = 255,
+    maxY = 255
   },
   objects = {
     [1] = {
