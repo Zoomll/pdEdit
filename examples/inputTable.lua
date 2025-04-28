@@ -50,9 +50,20 @@ local input = {
         canRotate = false,
         canFlip = false,
         custom = {
-          -- Integers can be 1 through 8 bits, changing their maximum value.
-          -- To determine the bits, write the type as int followed by a number
-          damage = "int8"
+          -- The maximum parameter for integers can go up to 255.
+          -- pdEdit will automatically choose how many bits to use based off of the maximum you set.
+          [1] = {
+            name = "Damage"
+            type = "int"
+            maximum = 100
+            default = 5
+          },
+          -- You can have as many custom settings as you like, but please be considerate of file size.
+          [2] = {
+            name = "Passable"
+            type = "bool"
+            default = false
+          }
         }
       }
     }
