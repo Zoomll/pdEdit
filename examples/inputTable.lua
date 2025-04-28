@@ -36,7 +36,7 @@ local key = {
         custom = {
           [1] = {
             name = "slippery",
-            type = "bool"
+            type = "bool",
             default = false
           }
         }
@@ -54,15 +54,15 @@ local key = {
           -- The maximum parameter for integers can go up to 255.
           -- pdEdit will automatically choose how many bits to use based off of the maximum you set.
           [1] = {
-            name = "Damage"
-            type = "int"
-            maximum = 100
+            name = "Damage",
+            type = "int",
+            maximum = 100,
             default = 5
           },
           -- You can have as many custom settings as you like, but please be considerate of file size.
           [2] = {
-            name = "Passable"
-            type = "bool"
+            name = "Passable",
+            type = "bool",
             default = false
           }
         }
