@@ -33,7 +33,11 @@ local input = {
         rotations = [0,90,180,270],
         -- You can define custom settings for an object for your game to use.
         custom = {
-          slippery = "bool"
+          [1] = {
+            name = "slippery",
+            type = "bool"
+            default = false
+          }
         }
       }
     },
