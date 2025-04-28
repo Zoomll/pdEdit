@@ -36,6 +36,21 @@ local input = {
           slippery = "bool"
         }
       }
+    },
+    [2] = {
+      meta = {
+        name = "Spike Ball",
+        texture = "/Shared/path/to/other/texture"
+      },
+      settings = {
+        canRotate = false,
+        canFlip = false,
+        custom = {
+          -- Integers can be 1 through 8 bits, changing their maximum value.
+          -- To determine the bits, write the type as int followed by a number
+          damage = "int8"
+        }
+      }
     }
   }
 }
