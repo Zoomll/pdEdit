@@ -29,6 +29,7 @@ local input = {
       settings = {
         canRotate = true,
         canFlip = true,
+        -- The rotations an object is allowed to have.
         rotations = [0,90,180,270],
         -- You can define custom settings for an object for your game to use.
         custom = {
