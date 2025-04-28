@@ -1,4 +1,5 @@
-local input = {
+-- The Key table is a table used for both reading and writing levels for your game.
+local key = {
   meta = {
     -- Used for backwards compatibility.
     -- The pdEdit version being used.
@@ -7,12 +8,12 @@ local input = {
     bundleID = "com.example.example",
     name = "My Game",
     -- banner is an image with the same dimensions as on the catalog
-    banner = "/Shared/path/to/banner"
+    banner = "/Shared/path/to/banner",
     -- Tools are editing modes used in the editor.
     -- Some settings are only available when certain tools are enabled.
     tools = {
-      rotate = true
-      flip = true
+      rotate = true,
+      flip = true,
       -- Settings tool is used to select custom settings.
       settings = true
     },
@@ -33,7 +34,37 @@ local input = {
         rotations = [0,90,180,270],
         -- You can define custom settings for an object for your game to use.
         custom = {
-          slippery = "bool"
+          [1] = {
+            name = "slippery",
+            type = "bool",
+            default = false
+          }
+        }
+      }
+    },
+    [2] = {
+      meta = {
+        name = "Spike Ball",
+        texture = "/Shared/path/to/other/texture"
+      },
+      settings = {
+        canRotate = false,
+        canFlip = false,
+        custom = {
+          -- The maximum parameter for integers can go up to 255.
+          -- pdEdit will automatically choose how many bits to use based off of the maximum you set.
+          [1] = {
+            name = "Damage",
+            type = "int",
+            maximum = 100,
+            default = 5
+          },
+          -- You can have as many custom settings as you like, but please be considerate of file size.
+          [2] = {
+            name = "Passable",
+            type = "bool",
+            default = false
+          }
         }
       }
     }
