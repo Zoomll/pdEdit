@@ -7,12 +7,12 @@ local input = {
     bundleID = "com.example.example",
     name = "My Game",
     -- banner is an image with the same dimensions as on the catalog
-    banner = "/Shared/path/to/banner"
+    banner = "/Shared/path/to/banner",
     -- Tools are editing modes used in the editor.
     -- Some settings are only available when certain tools are enabled.
     tools = {
-      rotate = true
-      flip = true
+      rotate = true,
+      flip = true,
       -- Settings tool is used to select custom settings.
       settings = true
     },
