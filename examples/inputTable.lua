@@ -1,4 +1,5 @@
-local input = {
+-- The Key table is a table used for both reading and writing levels for your game.
+local key = {
   meta = {
     -- Used for backwards compatibility.
     -- The pdEdit version being used.
