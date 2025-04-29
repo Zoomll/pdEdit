@@ -22,6 +22,11 @@ freely, subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribut
 ion.
 ]]
-local function tableToBits (input,settings)
-  -- Why did I try doing this on my phone
+local function numToBinary(n, bits)
+  bits = bits or 8
+  local t = {}
+  for i = bits - 1, 0, -1 do
+    t[#t + 1] = math.floor(n / 2^i) % 2
+  end
+  return table.concat(t)
 end
