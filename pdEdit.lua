@@ -88,3 +88,5 @@ local function readBitStringFromFile(path)
     return dataBits
 end
 -- AI generated functions end here
+
+local loadedLevel = {}
