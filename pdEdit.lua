@@ -90,4 +90,4 @@ end
 -- AI generated functions end here
 
 local loadedLevel = {}
-local bitString = ""
+local bits = ""
