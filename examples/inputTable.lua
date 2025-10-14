@@ -3,8 +3,8 @@ local key = {
   meta = {
     -- Used for backwards compatibility.
     -- The pdEdit version being used.
-    -- NOTE: Versions will not be used until pdEdit 1.0 is out. For now it should always equal 1.
-    version = 1
+    -- NOTE: Versions will not be used until pdEdit 1.0 is out. For now it should always equal 0.
+    version = 0
     bundleID = "com.example.example",
     name = "My Game",
     -- banner is an image with the same dimensions as on the catalog
